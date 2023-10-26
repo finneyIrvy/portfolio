@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /* CSS for styling the navigation bar */
-        body {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: left 0px;
-            margin: top 0%;
-            display: grid;
-            place-items: center;
-           
-                      
-        }
-        nav {
-            background-color:none;
-            overflow: hidden;
-        }
-        nav a {
-            margin-top:0%;
-            display: grid;
-            place-items: center;
-            position: sticky;
-            float:right;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size:smaller
-        }
-        nav a:hover {
-            shape-margin: 20px;
-            border: aquamarine;
-            transform: scale(1.3);
-        }
-        video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -3;
-    }
-    .transition {
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 1.5s, transform 1.5s;
-}
+      /* CSS for styling the navigation bar */
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: left 0px;
+        margin: top 0%;
+        display: grid;
+        place-items: center;
+        background-image: url(himalayas.png);
+        background-size: cover;
+      }
+      nav {
+        background-color: none;
+        overflow: hidden;
+      }
+      nav a {
+        margin-top: 0%;
+        display: grid;
+        place-items: center;
+        position: sticky;
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: smaller;
+      }
+      nav a:hover {
+        shape-margin: 20px;
+        border: aquamarine;
+        transform: scale(1.3);
+      }
+      .transition {
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0auto;
+      }
 
-        
+      .box {
+        width: 22%;
+        height: 150px;
+        background-color: #333;
+        color: goldenrod;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .cv-button {
+        text-align: center;
+        margin-top: 40px;
+        background-color: transparent;
+        border: 2px solid goldenrod;
+        color: goldenrod;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+      }
+      .cv-button:hover {
+        background-color: goldenrod;
+        color: black;
+      }
     </style>
-</head>
-
-<body>
-    <video autoplay muted loop>
-        <source src="port.mp4" type="video/mp4">
-        
-      </video>
-    
+  </head>
+  <body>
     <nav>
-        <b> 
-
-            <a > call:0703708570 </a>   
-       <a href="Services.html">Services</a>
-        <a style="color: goldenrod;"href="Resume.html">Resume</a>
-       <a href="About.html">About</a>
-       <a href="Portfolio.html">portfolio</a>
-       <a href="home2.html"><i class="fa fa-fw fa-home"></i></a>
-       
-       
-        </b>
+      <b>
+        <a> call:0703708570 </a>
+        <a href="Services.html">Services</a>
+        <a style="color: goldenrod" href="Resume.html">Resume</a>
+        <a href="About.html">About</a>
+        <a href="Portfolio.html">portfolio</a
+        ><a href="home2.html"><i class="fa fa-fw fa-home"></i></a
+      ></b>
     </nav>
-   
-    
-
-
-
-  
-
-</body>
+    <div
+      style="
+        z-index: 1 index;
+        color: rgb(82, 77, 77);
+        font-size: xx-large;
+        filter: grayscale(40%);
+        font-family: fantasy;
+      "
+    >
+      <h1><b>Resume</b></h1>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h2>Education</h2>
+        <p>Bachelor's Degree</p>
+      </div>
+      <div class="box">
+        <h2>Experience</h2>
+        <p>5+ Years</p>
+      </div>
+      <div class="box">
+        <h2>Skills</h2>
+        <p>Technical Skills</p>
+      </div>
+      <div class="box">
+        <h2>Contact</h2>
+        <p>Email, Phone</p>
+      </div>
+    </div>
+    <div class="cv-button">
+      <button onclick="window.open('path_to_your_cv.pdf', '_blank')">
+        Download CV
+      </button>
+    </div>
+  </body>
 </html>

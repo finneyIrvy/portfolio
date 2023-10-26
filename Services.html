@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /* CSS for styling the navigation bar */
-        body {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: left 0px;
-            margin: top 0%;
-            display: grid;
-            place-items: center;
+      /* CSS for styling the navigation bar */
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: left 0px;
+        margin: top 0%;
+        display: grid;
+        place-items: center;
+        background-color: rgb(33, 35, 37);
+      }
 
-           
-                      
-        }
-        nav {
-            background-color:none;
-            overflow: hidden;
-        }
-        nav a {
-            margin-top:0%;
-            display: grid;
-            place-items: center;
-            position: sticky;
-            float:right;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size:smaller
-            
-        }
-        nav a:hover {
-            shape-margin: 20px;
-            border: aquamarine;
-            transform: scale(1.3);
-        }
-        video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -3;
+      nav {
+        background-color: none;
+        overflow: hidden;
+      }
+      nav a {
+        margin-top: 0%;
+        display: grid;
+        place-items: center;
+        position: sticky;
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: smaller;
+      }
+      nav a:hover {
+        shape-margin: 20px;
+        border: aquamarine;
+        transform: scale(1.3);
+      }
+      .transition {
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0auto;
+      }
 
-    }
-   
-    .transition {
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-        
+      .image-container img {
+        width: 300px; /* Adjust size as needed */
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: aquamarine;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+      }
+      .image-container figcaption {
+        text-align: center;
+        margin-top: 5px;
+        color: goldenrod;
+      }
     </style>
-</head>
-
-<body>
-    <video autoplay muted loop>
-        <source src="port.mp4" type="video/mp4">
-        
-      </video>
-    
+  </head>
+  <body>
     <nav>
-        <b>
-            <a > call:0703708570 </a>
-            <a style="color: goldenrod;" href="Services.html">Services</a>
+      <b>
+        <a> call:0703708570 </a>
+        <a style="color: goldenrod" href="Services.html">Services</a>
         <a href="Resume.html">Resume</a>
-        <a href="About.html">About</a>
-       <a href="Portfolio.html">portfolio</a>
-       <a href="home2.html"><i class="fa fa-fw fa-home"></i></a>        
-       
-        </b>
+        <a href="About.html">About</a><a href="Portfolio.html">portfolio</a
+        ><a href="home2.html"><i class="fa fa-fw fa-home"></i></a
+      ></b>
     </nav>
-   
-  
+    <div
+      style="
+        z-index: 1 index;
+        color: rgb(82, 77, 77);
+        font-size: xx-large;
+        filter: grayscale(40%);
+        font-family: fantasy;
+      "
+    >
+      <h1><b>Services</b></h1>
+    </div>
+    <div class="image-container">
+      <figure>
+        <img src="web.png" alt="Tourist Site 1" />
+        <figcaption>A beautiful web scenery</figcaption>
+      </figure>
 
-  
-
-</body>
+      <figure>
+        <img src="market.png" alt="Tourist Site 3" />
+        <figcaption>marketing curves advisor and expert</figcaption>
+      </figure>
+      <figure>
+        <img src="photo.jpg" alt="Tourist Site 2" />
+        <figcaption>
+          A captivating photo spot with premium high-quality
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="web.png" alt="Tourist Site 1" />
+        <figcaption>
+          Another view of the beautiful web with smooth running operations
+        </figcaption>
+      </figure>
+    </div>
+  </body>
 </html>
